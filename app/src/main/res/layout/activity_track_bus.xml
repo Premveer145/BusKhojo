@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DriverHomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Search Your Bus"
+        android:layout_marginTop="20dp"
+        android:textColor="#3F7EB5"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Bus Number"
+            android:textColor="#5BA5E4"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/busNum"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#19000000"
+                android:inputType="text|textEmailAddress"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/SerBusBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginRight="55dp"
+            android:backgroundTint="#41ABFF"
+            android:text="SEARCH"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:id="@+id/Card"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="#AFACAC"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_busName"
+            android:text="Bus name:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_busNumber"
+            android:text="Bus number:"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_driverName"
+            android:text="driver's name"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_driverNumber"
+            android:text="Driver's number:"
+            android:textSize="20sp"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/track_seats"
+            android:text="Number of seats:"
+            android:textSize="20sp"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

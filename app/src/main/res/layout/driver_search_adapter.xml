@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#AFACAC"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter_busName"
+        android:text="Bus name:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter_busNumber"
+        android:text="Bus number:"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter_driverName"
+        android:text="driver's name"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter_driverNumber"
+        android:text="Driver's number:"
+        android:textSize="20sp"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adapter_seats"
+        android:text="Number of seats:"
+        android:textSize="20sp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+</androidx.cardview.widget.CardView>

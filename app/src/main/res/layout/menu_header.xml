@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/sky_blue_dark"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/headUserProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="18dp"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:background="@drawable/default_profile_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headUserName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="User Name"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/headUserMail"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="usermail@gmail.com"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

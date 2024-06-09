@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "953201331122",
+    "firebase_url": "https://buskhojo-9a3d8-default-rtdb.firebaseio.com",
+    "project_id": "buskhojo-9a3d8",
+    "storage_bucket": "buskhojo-9a3d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953201331122:android:39327549f9eb3a005bb2ab",
+        "android_client_info": {
+          "package_name": "com.teamsky.buskhojo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdIEv4NZw03XhJ2r64K1Bck__7Q1EV4Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nev_serbus"
+            android:icon="@drawable/baseline_departure_board_24"
+            android:title="Search bus" />
+
+        <item
+            android:id="@+id/nev_RouteChart"
+            android:icon="@drawable/baseline_route_24"
+            android:title="Route Chart" />
+
+        <item
+            android:id="@+id/nev_BusDetails"
+            android:icon="@drawable/baseline_directions_bus_24"
+            android:title="Bus Details" />
+
+        <item
+            android:id="@+id/nev_TrackBus"
+            android:icon="@drawable/baseline_mode_of_travel_24"
+            android:title="Track Bus" />
+
+        <item
+            android:id="@+id/nev_History"
+            android:icon="@drawable/baseline_history_24"
+            android:title="History" />
+
+        <item
+            android:id="@+id/nev_More"
+            android:icon="@drawable/baseline_more_time_24"
+            android:title="More" />
+
+    </group>
+
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nev_Profile"
+                    android:icon="@drawable/baseline_person_24"
+                    android:title="Profile" />
+
+                <item
+                    android:id="@+id/nev_LogOut"
+                    android:icon="@drawable/baseline_logout_24"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nev_share"
+                    android:icon="@drawable/baseline_share_24"
+                    android:title="Share" />
+
+                <item
+                    android:id="@+id/nev_rate"
+                    android:icon="@drawable/baseline_star_rate_24"
+                    android:title="Rate Us" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

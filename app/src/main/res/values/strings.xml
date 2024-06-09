@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BusKhojo</string>
+    <string name="terms_conditions">By continuing you are agree to <u><b>Terms and Conditions</b></u>.</string>
+    <string name="login_here"><u>Log in here</u>.</string>
+    <string name="register_here"><u>Register here</u>.</string>
+    <string name="title_activity_user_maps">UserMapsActivity</string>
+    <string name="title_activity_driver_maps">DriverMapsActivity</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+</resources>

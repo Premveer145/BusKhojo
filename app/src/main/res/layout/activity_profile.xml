@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/userloginhead"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@drawable/head_design"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/UserProfile"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        android:background="@drawable/default_profile_icon"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="84dp"
+                        android:layout_marginTop="84dp"
+                        android:background="@color/sky_blue_dark"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        android:src="@drawable/baseline_edit_note_white_24"/>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/pUserNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="User Name"
+                    android:textSize="28dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/pUserMailTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:text="usermail@gmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/backArrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/baseline_arrow_back_ios_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ButtonCenterYellow"
+        android:layout_below="@+id/userloginhead"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:text="YOUR NAME"
+            android:textColor="#5BA5E4"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/pUserName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#19000000"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="YOUR EMAIL"
+            android:textColor="#5BA5E4"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/pUserMail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#19000000"
+                android:inputType="text|textEmailAddress"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="YOUR PHONE"
+            android:textColor="#5BA5E4"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/pUserPhone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#19000000"
+                android:inputType="phone"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/timerTextView"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonCenterYellow"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_style_yellow">
+
+        <Button
+            android:id="@+id/pUserUpdateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="55dp"
+            android:backgroundTint="#41ABFF"
+            android:text="UPDATE"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
